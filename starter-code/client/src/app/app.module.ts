@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import {routes} from './routes';
 import { EntryService } from '../services/entry.service';
-
 import { AppComponent } from './app.component';
 import { EntryListComponent } from './entry-list/entry-list.component';
 
