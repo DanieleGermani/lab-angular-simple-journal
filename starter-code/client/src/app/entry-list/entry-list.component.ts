@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./entry-list.component.css']
 })
 export class EntryListComponent implements OnInit {
-  entries:Array<Object>;
+  entries:Observable<Array<Object>>;
 
   constructor(private entryServ: EntryService) { }
 

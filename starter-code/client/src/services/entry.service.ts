@@ -15,7 +15,9 @@ BASE_URL:string = environment.baseURL;
   getEntries(): Observable<any> {
     return this.http.get(`${this.BASE_URL}/api/journal-entries`)
       .map((res) => res.json())
-      
-
   }
+  getEntry(id) {
+     return this.http.get(`${this.BASE_URL}/api/journal-entries/${id}`)
+       .map((res) => res.json());
+   }
 }
